@@ -1,0 +1,61 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #258cd1;
+        }
+
+        canvas {
+            margin: 20px;
+        }
+         canvas#myLineChart {
+        max-width: 2000px;
+        max-height: 300px;
+    }
+
+        /* Add this CSS to style the "Result" container */
+.result-container {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.result-container h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#result {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+        .green {
+            color: green;
+        }
+
+        .red {
+            color: red;
+        }
+
