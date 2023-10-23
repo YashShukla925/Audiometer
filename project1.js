@@ -87,16 +87,15 @@
             myLineChart = new Chart(ctx, {
                 type: 'line',
                 data: data,
-                options: options
-<!--                {-->
-<!--            legend: { display: false },-->
-<!--            scales: {-->
-<!--              yAxes: [{ ticks: { min: 0, max: 20} }],-->
-<!--            },-->
-<!--          },-->
+                options: {
+            legend: { display: false },
+            scales: {
+              yAxes: [{ ticks: { min: 0, max: 120 } }],
+            },
+          },
             });
         }
-
+        
         var generateGraphButton = document.getElementById('generateGraph');
         generateGraphButton.addEventListener('click', function() {
             createLineChart();
