@@ -34,13 +34,20 @@ individuals with hearing disabilities during the testing process.**
 assessments to ensure accurate diagnosis of hearing impairments and
 disorders.**
 * #### User-Friendly Interface:
- **The application strives to have an intuitive and userfriendly interface, making it accessible to both healthcare professionals and
+  **The application strives to have an intuitive and userfriendly interface, making it accessible to both healthcare professionals and
 patients.**
-#### Efficiency:
-**To streamline the audiometric testing process, saving time for both
+* #### Efficiency:
+  **To streamline the audiometric testing process, saving time for both
 healthcare professionals and patients.**
-#### Data Security:
-**Ensure the privacy and security of patient data, adhering to
+* #### Data Security:
+  **Ensure the privacy and security of patient data, adhering to
 healthcare data protection regulations.**
 
+**In summary, the audiometry project is a software application with a primary focus on
+hearing assessment, offering a range of features to aid healthcare professionals in
+diagnosing hearing impairments and providing patients with a reliable and accessible
+platform for audiometric testing. Its goals include accuracy, efficiency, data security,
+and support for research in the field of audiology**
 
+
+## REFER IMAGES
