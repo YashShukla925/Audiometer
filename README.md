@@ -51,4 +51,4 @@ and support for research in the field of audiology**
 
 
 ## REFER IMAGES
-![website page](C:\Users\YASH SHUKLA\OneDrive\Pictures\Screenshots\Screenshot (50).png)
+<img src="https://audiometer-uv6u-kqvu8ka4p-yash-shuklas-projects.vercel.app/">
