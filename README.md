@@ -66,5 +66,6 @@ and support for research in the field of audiology**
 
 
 
-![WhatsApp Image 2023-10-29 at 7 28 35 PM](https://github.com/YashShukla925/Audiometer/assets/120268919/2a463361-b7af-43ab-ace0-6887141ec41d)
+![WhatsApp Image 2023-10-29 at 7 28 35 PM (1)](https://github.com/YashShukla925/Audiometer/assets/120268919/d01642bb-a729-466b-a191-6f11d130a10a)
+
 
