@@ -59,3 +59,7 @@ and support for research in the field of audiology**
 
 ![Screenshot 2023-10-29 191548](https://github.com/YashShukla925/Audiometer/assets/120268919/6e237e67-ff46-436a-9b48-fc3557344701)
 
+
+
+![Screenshot 2023-10-29 191519](https://github.com/YashShukla925/Audiometer/assets/120268919/bcb2643a-2078-4974-bcb7-a0cbe50f7aa8)
+
