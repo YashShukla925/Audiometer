@@ -28,5 +28,19 @@ aiding in the diagnosis and treatment planning.**
 * #### Accessibility: 
   **The software may include accessibility features to accommodate
 individuals with hearing disabilities during the testing process.**
+## GOALS: 
+* #### Accurate Diagnosis:
+  **The project aims to provide a reliable platform for hearing
+assessments to ensure accurate diagnosis of hearing impairments and
+disorders.**
+* #### User-Friendly Interface:
+ **The application strives to have an intuitive and userfriendly interface, making it accessible to both healthcare professionals and
+patients.**
+#### Efficiency:
+**To streamline the audiometric testing process, saving time for both
+healthcare professionals and patients.**
+#### Data Security:
+**Ensure the privacy and security of patient data, adhering to
+healthcare data protection regulations.**
 
 
