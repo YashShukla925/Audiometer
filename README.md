@@ -5,6 +5,9 @@ purpose is to perform audiometric testing, which involves measuring an individua
 hearing thresholds across various frequencies. This project aims to solve several key
 problems and fulfill the following goals:**
 #### PURPOSE:
-###### HEARING ASSESSMENT: **The project's main purpose is to provide a platform for
-**conducting hearing assessments and audiometric tests, allowing healthcare
+###### HEARING ASSESSMENT:
+**The project's main purpose is to provide a platform for
+conducting hearing assessments and audiometric tests, allowing healthcare
 professionals to determine the hearing ability of patients.**
+#### KEY FEATURES: 
+* 
