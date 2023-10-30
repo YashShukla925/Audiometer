@@ -13,13 +13,13 @@ function plotblankChart(leftArray, rightArray) {
     labels: ["250", "500", "800", "1000", "2000"],
     datasets: [
       {
-        label: "First Dataset",
+        label: "Left Ear",
         //   data: [10, 35, 50, 90, 80],
         data: leftArray,
         borderWidth: 3,
       },
       {
-        label: "Second Dataset",
+        label: "Right Ear",
         //   data: [20, 60, 30, 70, 100],
         data: rightArray,
 
@@ -231,7 +231,7 @@ function result(){
 
 
 function condition(leftAvg){
-  if(leftAvg<=25) problemname="Normal";
+  if(leftAvg<=25) return "Normal";
   else if(leftAvg>25 && leftAvg<=40) return "Mild";
   else if(leftAvg>40 && leftAvg<=55) return "Moderate";
   else if(leftAvg>55 && leftAvg<=70) return "Moderately Severe";
