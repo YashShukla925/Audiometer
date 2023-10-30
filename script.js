@@ -83,16 +83,25 @@ function plotblankChart(leftArray, rightArray) {
     },
     plugins: [canvasBackgroundColor],
   };
-  if(myChart!=null){
+  if (myChart != null) {
     myChart.destroy();
   }
   myChart = new Chart(ctx, config);
-  
 }
 
 let freqArray = ["250", "500", "800", "1000", "2000"];
-let dbArray = ["0.8", "0.25", "0.125", "0.0625", "0.031", "0.015", "0.0078", "0.004", "0.0019", "0.0009"];
-
+let dbArray = [
+  "0.8",
+  "0.25",
+  "0.125",
+  "0.0625",
+  "0.031",
+  "0.015",
+  "0.0078",
+  "0.004",
+  "0.0019",
+  "0.0009",
+];
 
 let changefreq = document.getElementsByClassName("count")[0];
 let changedb = document.getElementsByClassName("count")[1];
@@ -126,7 +135,7 @@ function barelyaudible() {
     i = -1;
   }
   i++;
-  j=1;
+  j = 1;
   if (i <= 4) {
     changefreq.innerHTML = freqArray[i];
     changedb.innerHTML = "80";
@@ -142,24 +151,19 @@ function barelyaudible() {
   start();
 }
 
-function start(){
-    let frequency = parseInt(freqArray[i]);
-    let volume = parseFloat(dbArray[j]);
-    generateAndPlay(frequency, volume, turn);
+function start() {
+  let frequency = parseInt(freqArray[i]);
+  let volume = parseFloat(dbArray[j]);
+  generateAndPlay(frequency, volume, turn);
 }
-
 
 function generateAndPlay(frequency, volume, turn) {
   // let frequency = parseInt(document.getElementById("frequency").value);
 
-  let audioContext = new (window.AudioContext ||
-    window.webkitAudioContext)();
+  let audioContext = new (window.AudioContext || window.webkitAudioContext)();
   let oscillator = audioContext.createOscillator();
   oscillator.type = "sine";
-  oscillator.frequency.setValueAtTime(
-    frequency,
-    audioContext.currentTime
-  );
+  oscillator.frequency.setValueAtTime(frequency, audioContext.currentTime);
 
   let panNodeLeft = audioContext.createStereoPanner();
   let panNodeRight = audioContext.createStereoPanner();
@@ -191,33 +195,28 @@ function generateAndPlay(frequency, volume, turn) {
   oscillator.stop(audioContext.currentTime + 4); // Play for 2 seconds
   // oscillator.stop(); // Play for 2 seconds
 
-  if(turn){
-
+  if (turn) {
     rightChannelAudio.volume = volume;
     rightChannelAudio.play();
-  }
-  else{
+  } else {
     leftChannelAudio.volume = volume;
     leftChannelAudio.play();
-
   }
-
-
 }
 
-function result(){
-  let leftsum=0;
-  let rightsum=0;
+function result() {
+  let leftsum = 0;
+  let rightsum = 0;
   for (let i = 0; i < 5; i++) {
-     leftsum += leftArray[i];
-     rightsum += rightArray[i];
+    leftsum += leftArray[i];
+    rightsum += rightArray[i];
   }
-  let leftAvg = leftsum/5;
-  let rightAvg = rightsum/5;
+  let leftAvg = leftsum / 5;
+  let rightAvg = rightsum / 5;
 
   let leftproblemname = condition(leftAvg);
   let rightproblemname = condition(rightAvg);
-  
+
   document.getElementById("leftavg").innerHTML = leftAvg;
   document.getElementById("leftproblem").innerHTML = leftproblemname;
   document.getElementById("rightavg").innerHTML = rightAvg;
@@ -225,22 +224,31 @@ function result(){
 
   document.getElementsByClassName("changetores")[0].style.display = "none";
   document.getElementsByClassName("chnagetocontrol")[0].style.display = "block";
-
-
 }
 
-
-function condition(leftAvg){
-  if(leftAvg<=25) return "Normal";
-  else if(leftAvg>25 && leftAvg<=40) return "Mild";
-  else if(leftAvg>40 && leftAvg<=55) return "Moderate";
-  else if(leftAvg>55 && leftAvg<=70) return "Moderately Severe";
-  else if(leftAvg>70 && leftAvg<=90) return "Severe";
+function condition(leftAvg) {
+  if (leftAvg <= 25) return "Normal";
+  else if (leftAvg > 25 && leftAvg <= 40) return "Mild";
+  else if (leftAvg > 40 && leftAvg <= 55) return "Moderate";
+  else if (leftAvg > 55 && leftAvg <= 70) return "Moderately Severe";
+  else if (leftAvg > 70 && leftAvg <= 90) return "Severe";
   else return "Profound";
 }
 
-
-function change(){
+function change() {
   document.getElementsByClassName("changetores")[0].style.display = "block";
   document.getElementsByClassName("chnagetocontrol")[0].style.display = "none";
+  if (myChart != null) {
+    myChart.destroy();
+  }
+  i = 0;
+  j = 1;
+  leftArray = [];
+  rightArray = [];
+  currentdb = 80;
+  turn = false;
+
+  changefreq.innerHTML = freqArray[i];
+  changedb.innerHTML = "80";
+  changeear.innerHTML = "Left";
 }
