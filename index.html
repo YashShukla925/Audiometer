@@ -10,19 +10,20 @@
   <body>
     <div class="main">
       <div class="sidebar">
-        <div class="icon dashboard">
+        <div class="icon dashboard" onclick="start()">
           <div class="dbimg">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABWklEQVR4nO2YwUrDQBCG99Sd0AfoofXo0/hYfQC9BWbEY4MzRgTbY07i2yhofQBlQ1IVs2wSUrNt54M5tN1N5uOfpbDGKIqiKMrAJJgvLIkA8hZIPqMo5K1Fzifp3Xl7CZTX0Run5nK9JSnPgyJlEuUmfmy14Z9IUp4DyrqUIb4NbqjHKSaJGrjJzqpk3kyIOkITKdC2v6FEfDM+1HPNYAtPTcTs+bleVKRjIn1HD2JL5OhETMf3gooceyIQmHEVGSuRfX32oSI+NJEKHS3Sw34iZwQCf4h9f/ehIrEBbUervpxzF3Um0usgi/wSXGxJstIaZR2TTIL5ApA3pQhJ1rjIEj/7Dl/sZUmediJRXVZTx0J5/xYhKSq7e3MgAPFDJVPsvpxc88WPqC6ntJqZSJnSagYkV3W/rvdfCyzJ8gDPx7LRtkrGjdnH2E2Cv1xvxZ8kFEVRFMX05wszk2kPzUwnYAAAAABJRU5ErkJggg==" alt="error"/>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABWklEQVR4nO2YwUrDQBCG99Sd0AfoofXo0/hYfQC9BWbEY4MzRgTbY07i2yhofQBlQ1IVs2wSUrNt54M5tN1N5uOfpbDGKIqiKMrAJJgvLIkA8hZIPqMo5K1Fzifp3Xl7CZTX0Run5nK9JSnPgyJlEuUmfmy14Z9IUp4DyrqUIb4NbqjHKSaJGrjJzqpk3kyIOkITKdC2v6FEfDM+1HPNYAtPTcTs+bleVKRjIn1HD2JL5OhETMf3gooceyIQmHEVGSuRfX32oSI+NJEKHS3Sw34iZwQCf4h9f/ehIrEBbUervpxzF3Um0usgi/wSXGxJstIaZR2TTIL5ApA3pQhJ1rjIEj/7Dl/sZUmediJRXVZTx0J5/xYhKSq7e3MgAPFDJVPsvpxc88WPqC6ntJqZSJnSagYkV3W/rvdfCyzJ8gDPx7LRtkrGjdnH2E2Cv1xvxZ8kFEVRFMX05wszk2kPzUwnYAAAAABJRU5ErkJggg=="
+              alt="error"
+            />
           </div>
           <div><p>Home</p></div>
         </div>
         <div class="icon prognosis">
           <div class="pgimg">
             <img
-              width="50"
-              height="50"
-              src="https://img.icons8.com/ios/50/laptop-metrics--v2.png"
-              alt="laptop-metrics--v2"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA5ElEQVR4nO2VQQ7DMAgE+USr/v9JbaU+Z6tIOVl1bAcWp4Y5hQvsCJKIJH8EfHgCuK0gsvEB8KCLsPvTZeAnsklscM7MUeQO4E3bjJfI/syT8RShysBZhCYzQ4QiM0vEXMb5P9LipR5kmv5H/15EO8g0/YwcSBFbkBvp+zzavpCzNoLVRKRRjyIpckCo0yrRBK6h7s0M55oDEURQQRO4RoqMbKRVjyIds4YJJVJyetjJHOoGy4h4ghSJdFpYTUQa9SiSIgeEOq0STeAa6t7McK45kCK2IDeyk6d11dO6ChJeJBF/voiONrfiyYCQAAAAAElFTkSuQmCC"
+              alt="err"
             />
           </div>
           <div><p>Instruction</p></div>
@@ -30,10 +31,8 @@
         <div class="icon transaction">
           <div class="tsimg">
             <img
-              width="50"
-              height="50"
-              src="https://img.icons8.com/ios/50/laptop-metrics--v2.png"
-              alt="laptop-metrics--v2"
+              src="data:image/png;base64,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"
+              alt=""
             />
           </div>
           <div><p>consultation</p></div>
@@ -41,34 +40,530 @@
         <div class="icon support">
           <div class="spimg">
             <img
-              width="50"
-              height="50"
-              src="https://img.icons8.com/ios/50/laptop-metrics--v2.png"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEEklEQVR4nO2ZSYiURxTHWyfGLRrEBSUhSjJK3ALq1S0axKhgCDoiDkEQRL0JEpAkCqKexAXNhp5y0WhE8aLgwYtCJi7Eg2KImHF03ILJaDRuoz95zPvgWX5VXd/XX7tA/y9Nd1W9939V9ZZ6XSrVUEMNFQGoA8YDXwP7gTPAP8BD4B5wDTgKbAY+BjqXXgUAA4B1wGWy4Szw6csk3hVYC9whP54A24H5wLsvkvwovSIurgI/AguAMUBf4A2gGzAImK5X6F+PQb8CjVW9XkrilqP4ODBb/CBSRh9gd+BkjgPjqkH+E+C+UXQbWAx0yiGrk+72BuCQOrqFfP+iSPIfAf8ZBReAkQXK7wusAu46hiwvQnhPjRoJmqvldMD7wO+Ooy+oVOgWI1BOYXhhjP0bdsS5Tvl0AiOAR0ZYcfcyrPdt4LQToeryCNpnhBwugFgvYIfu6gnNJR8ENs8695KsyoYBj3WxfI6qgHhn4HN1fhftwA9Av5R1K828v4AuWZRuNYsP5CQ+Ukn8SXm0SLRz1nfXOirBwizF2XWzcEoZpxusxZzE9q+AvUooDX8DDZr8JAfg5JaxjvwvzfjOWAOmmkWX09I7sN5x8HIQ4muA/o6cmVq5JvgDeMuM99BKVuZMizVgoxG42TMnppBrA3ZpwdYjoO9Dp0baFkU0IPCkETbdMyc5ATGkFTimZKU8WASMzhL6gLlGp5QsAyuJwRIZUIK9cgnKp/toik+IPw3NIkScMcGpqjJ+XvdSz1W8CbwTK0QqzAQ/VZ3180WjDz+XYgBsMotWptx7yY7rS1UA0DtgQFuskD1m0Txn7H/9/YG8tlLCoYTcS6H3bmgeHRnbizyONNEZE6UJBgfGWgLyg/MowIDzZs0wZ0xCZYIJL9iAtlgDbphFbtbc6Sut5ToouRZf7oiZhx97Yg2Q2JvgmRwArDZj35eqAPxhtD5WgDhogjedsUlm7FwVyNc5xG9pUKnPIkTeoQme6TiIQc7Du9C3MTDUyG5NGS8fxq35nvGDZso3BRuwxsjeH7gdDyoxwBZdreVeScAs4Dct+uRzZqCEuWdkN2TlFmtAF+CKmdZYhnwaPjN3vl533pJv8rxBKjcgJRqJMb0986RNmBVX3SSZ1YCklMZXz2t3wSakrREhOQZNAfLSKE7QHjLgoq+UcObNcZQvy3ECslmt+qdIQ6gzDUw265pDBkiLI8FFfR/7TuIXM1ceP3NTCrc0zPAScKB+Mllbmgm+Cy0YktJCzwIJs10dI5q0LdkUIk+HQ6f1jiyE23teA1TQFHWmvGjWdsjo0GM+Re+KiCbB1Cwt7216jaxj58GFmHKA9BNo1w35tuzOVwp9jtpOmsWK0usAOhpRjfo3UrO+4qJOoIYaaijlwlM4u2Zmu4ZcVAAAAABJRU5ErkJggg=="
               alt="laptop-metrics--v2"
             />
           </div>
           <div><p>Support</p></div>
         </div>
       </div>
+      <div class="bgsvg">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svgjs="http://svgjs.dev/svgjs"
+          width="800"
+          height="400"
+          preserveAspectRatio="none"
+          viewBox="0 0 800 400"
+        >
+          <g mask='url("#SvgjsMask1303")' fill="none">
+            <g transform="translate(0, 0)" stroke-linecap="round">
+              <path
+                d="M130 121.705 L130 144.20499999999998"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M130 161.07999999999998 L130 183.57999999999998"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M130 200.45499999999998 L130 278.305"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M145 69.655 L145 182.155"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M145 199.03 L145 289.03"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M145 305.905 L145 330.345"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M160 155.645 L160 166.895"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M160 183.77 L160 195.02"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M160 211.895 L160 244.355"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M175 102.215 L175 297.775"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M190 135.575 L190 264.425"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M205 108.965 L205 120.215"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M205 137.09 L205 193.34"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M205 210.215 L205 291.025"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M220 70.745 L220 183.245"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M220 200.12 L220 329.255"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M235 99.275 L235 234.275"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M235 251.15 L235 262.4"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M235 279.275 L235 300.725"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M250 73.015 L250 140.515"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M250 157.39 L250 326.985"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M265 157.375 L265 242.625"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M280 140.155 L280 162.655"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M280 179.53 L280 190.78"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M280 207.655 L280 259.855"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M295 152.055 L295 247.945"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M310 128.445 L310 162.195"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M310 179.07 L310 271.555"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M325 97.145 L325 153.39499999999998"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M325 170.26999999999998 L325 226.51999999999998"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M325 243.39499999999998 L325 302.855"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M340 75.315 L340 176.565"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M340 193.44 L340 215.94"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M340 232.815 L340 324.685"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M355 146.475 L355 168.975"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M355 185.85 L355 219.6"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M355 236.475 L355 253.52499999999998"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M370 164.095 L370 175.345"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M370 192.22 L370 203.47"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M370 220.345 L370 235.905"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M385 115.625 L385 216.875"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M385 233.75 L385 284.375"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M400 131.60500000000002 L400 268.385"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M415 94.635 L415 207.135"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M415 224.01 L415 235.26"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M415 252.135 L415 305.365"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M430 102.285 L430 237.285"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M430 254.16 L430 265.40999999999997"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M430 282.28499999999997 L430 297.715"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M445 180.385 L445 219.615"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M460 73.585 L460 326.415"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M475 78.395 L475 100.895"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M475 117.77 L475 174.01999999999998"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M475 190.89499999999998 L475 321.605"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M490 89.815 L490 202.315"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M490 219.19 L490 241.69"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M490 258.565 L490 310.185"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M505 73.815 L505 253.815"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M505 270.69 L505 293.19"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M505 310.065 L505 326.185"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M520 135.615 L520 146.865"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M520 163.74 L520 197.49"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M520 214.365 L520 264.385"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M535 170.055 L535 229.945"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M550 173.345 L550 184.595"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M550 201.47 L550 226.655"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M565 93.715 L565 172.465"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M565 189.34 L565 223.09"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M565 239.965 L565 306.275"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M580 94.625 L580 229.625"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M580 246.5 L580 305.375"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M595 148.775 L595 182.525"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M595 199.4 L595 221.9"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M595 238.775 L595 251.235"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M610 105.075 L610 172.575"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M610 189.45 L610 200.7"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M610 217.575 L610 294.925"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M625 101.705 L625 169.20499999999998"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M625 186.07999999999998 L625 208.57999999999998"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M625 225.45499999999998 L625 298.295"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M640 183.025 L640 216.975"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M655 98.045 L655 143.04500000000002"
+                stroke-width="11.25"
+                stroke="rgba(255, 165, 0, 1)"
+              ></path>
+              <path
+                d="M655 159.92000000000002 L655 204.92000000000002"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M655 221.79500000000002 L655 301.955"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M670 115.365 L670 171.615"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+              <path
+                d="M670 188.49 L670 284.635"
+                stroke-width="11.25"
+                stroke="rgba(0, 45, 124, 1)"
+              ></path>
+            </g>
+          </g>
+          <defs>
+            <mask id="SvgjsMask1303">
+              <rect width="800" height="400" fill="#ffffff"></rect>
+            </mask>
+          </defs>
+        </svg>
+      </div>
       <div class="undersidebar"></div>
       <div class="changetores">
         <div class="account-Btn">
-          <div class="profile"">
-            <!-- <div class="name-sec"></div>
-            <div class="measure"></div> -->
+          <div class="profile">
             <div class="none">
-              <h2>Left Channel</h2>
               <audio id="leftChannel" controls></audio>
-        
-              <h2>Right Channel</h2>
               <audio id="rightChannel" controls></audio>
             </div>
-            <button class="control" type="button" onclick="start()">Start</button>
+            <div class="userimg">
+              <img
+                src="/Audiometer/WhatsApp Image 2023-11-01 at 14.59.38_e776fe12.jpg"
+                alt="err"
+              />
+            </div>
+            <div class="username">User Name</div>
+            <div class="useragegender">
+              <sapn class="age">20</sapn>
+              <span>years,</span>
+              <sapn class="gender">male</sapn>
+            </div>
+            <hr />
+            <div class="resulthead">Ear Condition</div>
+            <div class="summery">
+              <div class="earresult">
+                <div class="earname">Left</div>
+                <div class="earproblem">-</div>
+              </div>
+              <div class="earresult">
+                <div class="earname">Right</div>
+                <div class="earproblem">-</div>
+              </div>
+            </div>
           </div>
           <div class="controls">
-            <button type="button" class="control audible" onclick="audible()">audible</button>
-            <button type="button" class="control noaudible" onclick="notaudible()">not audible</button>
-            <button type="button" class="control barely-audible" onclick="barelyaudible()">barely audible</button>
+            <div class="controlsection">
+              <div class="controlbtn">
+                <button class="control">Start Test</button>
+              </div>
+            </div>
+            <div class="controlsection">
+              <div class="controlbtn">
+                <button type="button" class="control audible" onclick="audible()">
+                  audible
+                </button>
+                <button
+                  type="button"
+                  class="control noaudible"
+                  onclick="notaudible()"
+                >
+                  not audible
+                </button>
+                <button
+                  type="button"
+                  class="control barely-audible"
+                  onclick="barelyaudible()"
+                >
+                  barely audible
+                </button>
+              </div>
+            </div>
+            <div class="controlsection">
+              <div class="controlbtn">
+                <button class="control">Start Test</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -94,8 +589,8 @@
           <div class="officialChart">
             <table id="table">
               <tr>
-                <th >Hearing Range</th>
-                <th >dB HL</th>
+                <th>Hearing Range</th>
+                <th>dB HL</th>
               </tr>
               <tr>
                 <td>Normal</td>
@@ -123,9 +618,10 @@
               </tr>
             </table>
           </div>
-          <button type="button" class="control col" onclick="change()">Retest</button>
+          <button type="button" class="control col" onclick="change()">
+            Re test
+          </button>
         </div>
-
       </div>
       <div class="screen">
         <div class="heading">
@@ -133,51 +629,73 @@
         </div>
         <div class="meters">
           <div class="meter-box">
-            <div class="valueimg">
-              <img
-                width="48"
-                height="48"
-                src="https://img.icons8.com/fluency-systems-filled/48/audio-wave.png"
-                alt="audio-wave"
-              />
+            <div class="firstsection">
+              <div class="valueimg">
+                <img
+                  width="48"
+                  height="48"
+                  src="https://img.icons8.com/fluency-systems-filled/48/audio-wave.png"
+                  alt="audio-wave"
+                />
+              </div>
+              <div class="unitName">Frequency</div>
             </div>
-            <div class="count">250</div>
-            <div class="unit">Hz</div>
+            <div class="secondsection">
+              <div class="center">
+                <span class="count">250</span>
+                <span class="unit">Hz</span>
+              </div>
+            </div>
           </div>
           <div class="meter-box decible">
-            <div class="valueimg">
-              <img
-                width="50"
-                height="50"
-                src="https://img.icons8.com/ios/50/low-volume.png"
-                alt="low-volume"
-              />
+            <div class="firstsection">
+              <div class="valueimg">
+                <img
+                  width="48"
+                  height="48"
+                  src="https://img.icons8.com/sf-regular/48/medium-volume.png"
+                  alt="medium-volume"
+                />
+              </div>
+              <div class="unitName">Decible</div>
             </div>
-            <div class="count">80</div>
-            <div class="unit">dB</div>
+            <div class="secondsection">
+              <div class="center">
+                <span class="count">80</span>
+                <span class="unit">dB</span>
+              </div>
+            </div>
           </div>
           <div class="meter-box ear">
-            <div class="valueimg">
-              <img
-                width="50"
-                height="50"
-                src="https://img.icons8.com/ios-filled/50/hearing.png"
-                alt="hearing"
-              />
+            <div class="firstsection">
+              <div class="valueimg">
+                <img
+                  width="50"
+                  height="50"
+                  src="https://img.icons8.com/ios-filled/50/hearing.png"
+                  alt="hearing"
+                />
+              </div>
+              <div class="unitName">Ear Side</div>
             </div>
-            <div class="count">Left</div>
-            <div class="unit">Ear</div>
+            <div class="firstsection">
+              <div class="center">
+                <span class="count">Left</span>
+                <span class="unit">Ear</span>
+              </div>
+            </div>
           </div>
         </div>
         <div class="chart-section">
-            <div class="chart">
-                <canvas id="myChart"></canvas>
-              </div>
-              <div class="range"></div>
+          <div class="chart">
+            <canvas id="myChart"></canvas>
+          </div>
+          <div class="range"></div>
         </div>
       </div>
     </div>
     <div class="ins"></div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -6,6 +6,14 @@ function plotChart() {
 }
 
 let myChart = null;
+let bgsvg = document.getElementsByClassName("bgsvg")[0];
+let startsection = document.getElementsByClassName("controlsection")[0];
+let volsection = document.getElementsByClassName("controlsection")[1];
+let resultsection = document.getElementsByClassName("controlsection")[2];
+startsection.style.display = "none";
+volsection.style.display = "block";
+resultsection.style.display = "none";
+
 
 function plotblankChart(leftArray, rightArray) {
   const ctx = document.getElementById("myChart");
@@ -74,6 +82,7 @@ function plotblankChart(leftArray, rightArray) {
         },
         y: {
           beginAtZero: true,
+          suggestedMax:100, 
           title: {
             display: true,
             text: "DECIBEL LEVEL", // Title for the Y-axis
@@ -88,6 +97,34 @@ function plotblankChart(leftArray, rightArray) {
   }
   myChart = new Chart(ctx, config);
 }
+
+
+
+// const ctx = document.getElementById('myChart');
+
+//   new Chart(ctx, {
+//     type: 'bar',
+//     data: {
+//       labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+//       datasets: [{
+//         label: '# of Votes',
+//         data: [12, 19, 3, 5, 2, 3],
+//         borderWidth: 1
+//       }]
+//     },
+//     options: {
+//       scales: {
+//         y: {
+//           beginAtZero: true
+//         }
+//       }
+//     }
+
+
+    
+//   });
+
+
 
 let freqArray = ["250", "500", "800", "1000", "2000"];
 let dbArray = [
@@ -134,6 +171,8 @@ function barelyaudible() {
     changeear.innerHTML = "Right";
     i = -1;
   }
+  bgsvg.style.display = "none";
+
   i++;
   j = 1;
   if (i <= 4) {
@@ -238,6 +277,7 @@ function condition(leftAvg) {
 function change() {
   document.getElementsByClassName("changetores")[0].style.display = "block";
   document.getElementsByClassName("chnagetocontrol")[0].style.display = "none";
+  bgsvg.style.display = "block";
   if (myChart != null) {
     myChart.destroy();
   }
